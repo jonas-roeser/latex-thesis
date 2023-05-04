@@ -1,0 +1,80 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+height=4.0in,
+minor xtick={},
+minor ytick={},
+tick align=outside,
+tick pos=left,
+width=6.3in,
+x grid style={darkgray176},
+xlabel={Wochentag},
+xmin=10957.2083333333, xmax=10967.7083333333,
+xtick style={color=black},
+xtick={10957.2083333333,10958.2083333333,10959.2083333333,10960.2083333333,10961.2083333333,10962.2083333333,10963.2083333333,10964.2083333333,10965.2083333333,10966.2083333333,10967.2083333333},
+xticklabels={
+  01-01
+Sat,
+  01-02
+Sun,
+  01-03
+Mon,
+  01-04
+Tue,
+  01-05
+Wed,
+  01-06
+Thu,
+  01-07
+Fri,
+  01-08
+Sat,
+  01-09
+Sun,
+  01-10
+Mon,
+  01-11
+Tue
+},
+y grid style={darkgray176},
+ylabel={Produktion},
+ymin=-1, ymax=11,
+ytick style={color=black},
+ytick={-2,0,2,4,6,8,10,12}
+]
+\addplot [draw=steelblue31119180, fill=steelblue31119180, mark=*, only marks]
+table{%
+x  y
+10957.2083333333 10
+10958.2083333333 9
+10959.2083333333 8
+10960.2083333333 7
+10961.2083333333 6
+10962.2083333333 5
+10963.2083333333 4
+10964.2083333333 3
+10965.2083333333 2
+10966.2083333333 1
+10967.2083333333 0
+};
+\addplot [semithick, steelblue31119180]
+table {%
+10957.2083333333 0
+10958.2083333333 1
+10959.2083333333 2
+10960.2083333333 3
+10961.2083333333 4
+10962.2083333333 5
+10963.2083333333 6
+10964.2083333333 7
+10965.2083333333 8
+10966.2083333333 9
+10967.2083333333 10
+};
+\end{axis}
+
+\end{tikzpicture}

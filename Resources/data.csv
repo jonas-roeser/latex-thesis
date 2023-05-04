@@ -1,0 +1,9 @@
+weekday,temperature,percipitation,cloudy
+Monday,30,10,yes
+Tuesday,22.3,20,no
+Wednesday,10.98,33,no
+Thursday,20,2.5,yes
+Friday,10,3.84,no
+Saturday,3.1,18,yes
+Sunday,-10.25,10,yes
+Average,12.30428571,13.90571429,NA

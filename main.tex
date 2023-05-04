@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MAIN DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{thesis}
+
+\title{Thesis Title}
+\author{Author Name}
+\date{DD Month YYYY}
+
+\begin{document}
+
+%-------------------------------------------------
+% FRONT MATTER
+%-------------------------------------------------
+\pagenumbering{roman}
+
+% TITLE PAGE
+\input{01_Front-matter/title-page.tex}
+
+% ABSTRACT
+\chapter*{Abstract}\label{ch:abstract}
+\input{01_Front-matter/abstract.tex}
+
+% ACKNOWLEDGEMENTS
+\chapter*{Acknowledgements}\label{ch:acknowledgements}
+\input{01_Front-matter/acknowledgements.tex}
+
+% TABLE OF CONTENTS
+\tableofcontents
+
+% LIST OF TABLES
+\listoftables
+
+% LIST OF FIGURES
+\listoffigures
+
+% LIST OF ABBREVIATIONS
+\printabbreviations
+
+%-------------------------------------------------
+% CHATPERS
+%-------------------------------------------------
+\clearpage
+\pagenumbering{arabic}
+
+\input{Resources/code-snippets.tex}
+
+% INTRODUCTION
+\chapter{Introduction}\label{ch:introduction}
+\input{02_Chapters/01_introduction.tex}
+
+% LITERATURE REVIEW
+\chapter{Literature Review}\label{ch:literature-review}
+\input{02_Chapters/02_literature-review.tex}
+
+% METHODOLOGY
+\chapter{Methodology}\label{ch:methodology}
+\input{02_Chapters/03_methodology.tex}
+
+% RESULTS
+\chapter{Results}\label{ch:results}
+\input{02_Chapters/04_results.tex}
+
+% DISCUSSION
+\chapter{Discussion}\label{ch:discussion}
+\input{02_Chapters/05_discussion.tex}
+
+% CONCLUSION
+\chapter{Conclusion}\label{ch:conclusion}
+\input{02_Chapters/06_conclusion.tex}
+
+%-------------------------------------------------
+% REFERENCES
+%-------------------------------------------------
+\printbibliography[title=References, heading=bibintoc]
+
+%-------------------------------------------------
+% APPENDICES
+%-------------------------------------------------
+\appendix
+
+% APPENDIX A
+\chapter{Appendix A}\label{ch:appendix-a}
+\input{03_Appendices/appendix-a.tex}
+
+% APPENDIX B
+\chapter{Appendix B}\label{ch:appendix-b}
+\input{03_Appendices/appendix-b.tex}
+
+% APPENDIX C
+\chapter{Appendix C}\label{ch:appendix-c}
+\input{03_Appendices/appendix-c.tex}
+
+% DECLARATION OF AUTHORSHIP
+\chapter*{Declaration of Authorship}\label{ch:declaration-of-authorship}
+\input{03_Appendices/declaration-of-authorship}
+
+\end{document}
