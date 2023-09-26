@@ -202,10 +202,10 @@
 % HYPERREF: embedded links
 \RequirePackage[pdfusetitle]{hyperref} % use document title & author as pdf-metadata
     \hypersetup{
-        pdfcreator={}, % ommit pdf-creator
+        pdfcreator={}, % omit pdf-creator
         pdfproducer={}, % omit pdf-producer
-        linktoc=all, % make both text and page clickable tin toc, lot & lot
-        colorlinks=true, % highlight links thorugh text colour
+        linktoc=all, % make both text and page clickable in toc, lot & lot
+        colorlinks=true, % highlight links through text colour
         allcolors={}, % set default colour to text colour
         citecolor=MidnightBlue, % set citation-link colour
         }
