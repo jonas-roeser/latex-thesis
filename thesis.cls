@@ -159,7 +159,7 @@
     % FORMATTING
     \setlength\bibitemsep{.5\baselineskip} % space bibliography entries
     \setlength{\bibhang}{\parindent} % align bibliography indent with paragraph indent
-    \renewcommand*\mkbibnamefamily[1]{\textsc{#1}} % can be set directly above bibliography to prevent in-text small caps
+    % \renewcommand*\mkbibnamefamily[1]{\textsc{#1}} % can be set directly above bibliography to prevent in-text small caps
 
     % ALLOW BIBLIOGRPAHY URLS TO BREAK ANYWHERE
     \setcounter{biburlnumpenalty}{9999}
