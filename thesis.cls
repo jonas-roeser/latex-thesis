@@ -177,6 +177,9 @@
     \AfterEndEnvironment{figure}{\vspace{-.5\baselineskip}} % remove skip after figures
     \setlength{\intextsep}{.5\baselineskip} % set equal skips above & below floats
 
+% LONGTABLE: tables that span multiple pages
+\RequirePackage{longtable}
+
 % CSVSIMPLE: tables from csv files
 \RequirePackage{csvsimple}
 
