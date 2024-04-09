@@ -172,6 +172,7 @@
 % SWITCH FROM CHAPTER-BASED NUMBERING TO CONTINUOUS NUMBERING
 \counterwithout{table}{chapter}
 \counterwithout{figure}{chapter}
+\counterwithout{equation}{chapter}
 
 % FLOATROW: float layout
 \RequirePackage{floatrow}
@@ -183,6 +184,7 @@
     % ALTERNATIVE TO \DeclareFloatVCode{halving_float_to_baseline_distance}{\vspace{-.5\baselineskip}} VIA postcode OPTION THAT ALLOWS FLOAT OBJECTS TO BE ALIGNED AT THE TOP
     \AfterEndEnvironment{table}{\vspace{-.5\baselineskip}} % remove skip after tables
     \AfterEndEnvironment{figure}{\vspace{-.5\baselineskip}} % remove skip after figures
+    \AfterEndEnvironment{equation}{\vspace{0\baselineskip}} % remove skip after figures
     \setlength{\intextsep}{.5\baselineskip} % set equal skips above & below floats
 
 % LONGTABLE: tables that span multiple pages
