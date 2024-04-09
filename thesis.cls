@@ -28,6 +28,9 @@
 % XCOLOR: extended colour library
 \RequirePackage[dvipsnames]{xcolor} % import a set of default colors to be used in the document
 
+% PDFLSCAPE: add landscape environment
+\RequirePackage{pdflscape}
+
 %-------------------------------------------------
 % GENERAL TYPOGRAPHY
 %-------------------------------------------------
