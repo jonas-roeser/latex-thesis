@@ -106,8 +106,9 @@
         {style=python-idle-code, basicstyle=\normalsize\ttfamily\linespread{1}\selectfont} % append \linespread{1}\selectfont to basicstyle found in python-idle-code
     \lstset{
         aboveskip=\fpeval{-1 / \baselinestretch * \baselineskip}pt + \baselineskip, belowskip=0pt, % adjust spacing above & below listing
-        xleftmargin=.5in, xrightmargin=.5in, breaklines=true, % confine listing to margins
-        showstringspaces=false % disable space encoding (_) in strings
+        xleftmargin=0in, xrightmargin=0in, breaklines=true, % confine listing to margins
+        showstringspaces=false, % disable space encoding (_) in strings
+        frame=single % add frame around listings
         }
 
 % FOOTMISC: footnote layout
