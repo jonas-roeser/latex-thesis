@@ -194,6 +194,10 @@
 \RequirePackage{siunitx}
     \sisetup{group-minimum-digits = 4} % specify minimum digits before three-digit grouping
 
+% XSTRING: 
+\RequirePackage{xstring}
+    \DeclareRobustCommand{\escapeunderscores}[1]{\StrSubstitute{#1}{_}{\_}} % add command for escaping underscores when reading csv files
+
 % GRAPHICX: graphics import
 \RequirePackage{graphicx}
     \graphicspath{{Resources}} % set default graphics import path
