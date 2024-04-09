@@ -98,6 +98,10 @@
         itemsep=.25\baselineskip, topsep=\itemsep, parsep=0pt, partopsep=0pt % set vertical spacing
         }
     \setlist[itemize, 1]{label=$\vcenter{\hbox{\scriptsize$\bullet$}}$} % change bullet point symbol
+    \newlist{questions}{enumerate}{2} % create new list for research questions
+    \setlist[questions]{rightmargin=0pt} % remove right margin
+    \setlist[questions, 1]{label=RQ., ref=RQ\arabic*} % RQ1. in environment and RQ1 in text
+    \setlist[questions, 2]{label=\alph*), ref=\thequestionsi\alph*} % a) in environment and RQ1a in text
 
 % LISTINGS: source code listings
 \RequirePackage{listings}
