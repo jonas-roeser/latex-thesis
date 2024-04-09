@@ -233,6 +233,7 @@
 \RequirePackage[abbreviations, automake, nonumberlist, stylemods=longextra]{glossaries-extra}
     \renewcommand{\abbreviationsname}{List of Abbreviations} % was "Abbreviations" before
     \setglossarystyle{long-name-desc} % booktabs style from longextra
+    \renewcommand{\glsgroupskip}{} % remove group skip from list of abbreviations
     \makeglossaries % creates a hidden gls file, if omitted the glossry is no longer updated
     \loadglsentries{Resources/abbreviations.tex}
 
